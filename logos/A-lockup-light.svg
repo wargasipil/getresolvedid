@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12.5 23.5 586.0 103.0" width="586.0" height="103.0"><defs>
+    <linearGradient id="Al-ind" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="Al-grn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs><g transform="translate(18,15)"><g>
+    <path d="M16,30 C48,30 60,60 92,60" fill="none" stroke="#818CF8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M16,60 L92,60" fill="none" stroke="#818CF8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M16,90 C48,90 60,60 92,60" fill="none" stroke="#818CF8" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="16" cy="30" r="7.5" fill="url(#Al-ind)"/>
+    <circle cx="16" cy="60" r="7.5" fill="url(#Al-ind)"/>
+    <circle cx="16" cy="90" r="7.5" fill="url(#Al-ind)"/>
+    <circle cx="92" cy="60" r="17" fill="url(#Al-grn)"/>
+    <polyline points="83.5,60 90,67 102,52" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></g><text x="182" y="96" font-family="Manrope" font-size="60" letter-spacing="-1.5"><tspan font-weight="500" fill="#0F172A">get</tspan><tspan font-weight="800" fill="#4F46E5">resolved</tspan><tspan font-weight="800" fill="#10B981">.id</tspan></text></svg>

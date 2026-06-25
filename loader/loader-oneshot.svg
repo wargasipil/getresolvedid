@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="getresolved resolved">
+  <defs>
+    <linearGradient id="osRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="osCore" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- faint full track ring (fades in) -->
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#4F46E5" stroke-opacity="0" stroke-width="9">
+    <animate attributeName="stroke-opacity" values="0;0.14" keyTimes="0;1"
+             dur="0.25s" begin="0s" fill="freeze"/>
+  </circle>
+
+  <!-- ring sweeps in: full circle drawn via dashoffset 0..207.3 reversed.
+       circumference of r33 = 207.345. start fully hidden (offset 207.345) -> 0 -->
+  <circle cx="60" cy="60" r="33" fill="none" stroke="url(#osRing)" stroke-width="9"
+          stroke-linecap="round" stroke-dasharray="207.345 207.345" stroke-dashoffset="207.345"
+          transform="rotate(-90 60 60)">
+    <animate attributeName="stroke-dashoffset" values="207.345;0" keyTimes="0;1"
+             dur="0.7s" begin="0.1s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
+  </circle>
+
+  <!-- green resolve core: snaps in with slight overshoot after ring completes -->
+  <circle cx="60" cy="60" r="0" fill="url(#osCore)">
+    <animate attributeName="r" values="0;16;13" keyTimes="0;0.6;1"
+             dur="0.45s" begin="0.75s" calcMode="spline"
+             keySplines="0.34 1.4 0.5 1;0.4 0 0.2 1" fill="freeze"/>
+  </circle>
+
+  <!-- check mark inside core: draws on after core snaps -->
+  <path d="M53 60 L58 65 L68 54" fill="none" stroke="#FFFFFF" stroke-width="4.5"
+        stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="26" stroke-dashoffset="26">
+    <animate attributeName="stroke-dashoffset" values="26;0" keyTimes="0;1"
+             dur="0.3s" begin="1.05s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
+  </path>
+
+  <!-- subtle success pulse ring -->
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#10B981" stroke-width="9" opacity="0">
+    <animate attributeName="r" values="33;46" keyTimes="0;1" dur="0.6s" begin="1.05s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.45;0" keyTimes="0;1" dur="0.6s" begin="1.05s" fill="freeze"/>
+    <animate attributeName="stroke-width" values="9;1" keyTimes="0;1" dur="0.6s" begin="1.05s" fill="freeze"/>
+  </circle>
+</svg>

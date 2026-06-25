@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>getresolved.id — animated loaders</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo:#4F46E5; --indigo-deep:#4338CA; --indigo-light:#818CF8;
+    --green:#10B981; --green-light:#34D399;
+    --ink:#0F172A; --ink-inv:#E2E8F0; --dark-bg:#0B1020;
+    --slate:#64748B; --hair:#E8EDF3;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:Manrope,system-ui,sans-serif; color:var(--ink);
+    background:#F7F9FC; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:48px 32px 80px;}
+  header.brand{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:24px; flex-wrap:wrap; margin-bottom:8px;
+  }
+  header.brand img.wm{height:44px; display:block;}
+  header.brand .tag{
+    font-size:13px; font-weight:600; color:var(--slate); letter-spacing:.02em;
+  }
+  h1{font-size:34px; font-weight:800; letter-spacing:-.02em; margin:28px 0 6px;}
+  p.lead{font-size:16px; color:var(--slate); margin:0 0 36px; max-width:640px; line-height:1.5;}
+
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  @media(max-width:760px){.grid{grid-template-columns:1fr;}}
+
+  .panel{
+    border-radius:20px; padding:28px 28px 22px;
+    border:1px solid var(--hair);
+  }
+  .panel.light{background:#FFFFFF;}
+  .panel.dark{background:var(--dark-bg); border-color:#1b2440;}
+  .panel.dark .ptitle, .panel.dark .cap{color:var(--ink-inv);}
+  .panel.dark .cap small{color:#94A3B8;}
+
+  .ptitle{
+    font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--slate); margin:0 0 22px;
+  }
+
+  .row{display:flex; align-items:flex-end; gap:34px; flex-wrap:wrap; margin-bottom:30px;}
+  .row:last-child{margin-bottom:6px;}
+  .item{display:flex; flex-direction:column; align-items:center; gap:12px;}
+  .item img{display:block;}
+  .cap{font-size:12px; font-weight:600; color:var(--ink); text-align:center; line-height:1.35;}
+  .cap small{display:block; font-weight:500; color:var(--slate); font-size:11px; margin-top:2px;}
+
+  .sec-title{
+    font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--slate); margin:46px 0 18px;
+  }
+  .oneshot-bar{display:flex; align-items:center; gap:14px; margin-bottom:20px;}
+  button.replay{
+    font-family:inherit; font-size:13px; font-weight:700; color:#fff;
+    background:var(--indigo); border:0; border-radius:10px;
+    padding:9px 16px; cursor:pointer; letter-spacing:.01em;
+    transition:background .15s ease;
+  }
+  button.replay:hover{background:var(--indigo-deep);}
+  .footnote{font-size:12px; color:var(--slate); margin-top:40px; line-height:1.6;}
+  code{background:#EEF1F7; padding:1px 6px; border-radius:5px; font-size:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="brand">
+    <img class="wm" src="../logos/getresolved-wordmark.svg" alt="getresolved.id"/>
+    <span class="tag">Animated logo-loaders</span>
+  </header>
+
+  <h1>Loaders &amp; resolve states</h1>
+  <p class="lead">The bullseye mark animates as a “resolving” state: an indigo arc spins as the working
+  indicator while the green core pulses, then snaps to a confirmed check for success. Every request gets resolved.</p>
+
+  <!-- ===== SPINNER (loop) ===== -->
+  <div class="sec-title">Spinner — continuous “working” loop</div>
+  <div class="grid">
+    <div class="panel light">
+      <p class="ptitle">On light</p>
+      <div class="row">
+        <div class="item"><img src="loader.svg" width="64" height="64" alt="64"><span class="cap">64px<small>full</small></span></div>
+        <div class="item"><img src="loader.svg" width="40" height="40" alt="40"><span class="cap">40px<small>inline</small></span></div>
+        <div class="item"><img src="loader.svg" width="24" height="24" alt="24"><span class="cap">24px<small>button</small></span></div>
+      </div>
+    </div>
+    <div class="panel dark">
+      <p class="ptitle">On dark</p>
+      <div class="row">
+        <div class="item"><img src="loader.svg" width="64" height="64" alt="64"><span class="cap">64px<small>full</small></span></div>
+        <div class="item"><img src="loader.svg" width="40" height="40" alt="40"><span class="cap">40px<small>inline</small></span></div>
+        <div class="item"><img src="loader.svg" width="24" height="24" alt="24"><span class="cap">24px<small>button</small></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TILE (splash) ===== -->
+  <div class="sec-title">Tile — app splash style</div>
+  <div class="grid">
+    <div class="panel light">
+      <p class="ptitle">On light</p>
+      <div class="row">
+        <div class="item"><img src="loader-tile.svg" width="64" height="64" alt="64"><span class="cap">64px<small>splash</small></span></div>
+        <div class="item"><img src="loader-tile.svg" width="40" height="40" alt="40"><span class="cap">40px<small>tile</small></span></div>
+        <div class="item"><img src="loader-tile.svg" width="24" height="24" alt="24"><span class="cap">24px<small>favicon</small></span></div>
+      </div>
+    </div>
+    <div class="panel dark">
+      <p class="ptitle">On dark</p>
+      <div class="row">
+        <div class="item"><img src="loader-tile.svg" width="64" height="64" alt="64"><span class="cap">64px<small>splash</small></span></div>
+        <div class="item"><img src="loader-tile.svg" width="40" height="40" alt="40"><span class="cap">40px<small>tile</small></span></div>
+        <div class="item"><img src="loader-tile.svg" width="24" height="24" alt="24"><span class="cap">24px<small>favicon</small></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ONE-SHOT (success) ===== -->
+  <div class="sec-title">One-shot — “resolved” / success confirmation</div>
+  <div class="oneshot-bar">
+    <button class="replay" id="replayBtn">▶ Replay one-shot</button>
+    <span class="tag" style="color:var(--slate);">Plays once, then holds the confirmed state.</span>
+  </div>
+  <div class="grid">
+    <div class="panel light">
+      <p class="ptitle">On light</p>
+      <div class="row">
+        <div class="item"><img class="os" src="loader-oneshot.svg" width="64" height="64" alt="64"><span class="cap">64px<small>full</small></span></div>
+        <div class="item"><img class="os" src="loader-oneshot.svg" width="40" height="40" alt="40"><span class="cap">40px<small>inline</small></span></div>
+        <div class="item"><img class="os" src="loader-oneshot.svg" width="24" height="24" alt="24"><span class="cap">24px<small>toast</small></span></div>
+      </div>
+    </div>
+    <div class="panel dark">
+      <p class="ptitle">On dark</p>
+      <div class="row">
+        <div class="item"><img class="os" src="loader-oneshot.svg" width="64" height="64" alt="64"><span class="cap">64px<small>full</small></span></div>
+        <div class="item"><img class="os" src="loader-oneshot.svg" width="40" height="40" alt="40"><span class="cap">40px<small>inline</small></span></div>
+        <div class="item"><img class="os" src="loader-oneshot.svg" width="24" height="24" alt="24"><span class="cap">24px<small>toast</small></span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footnote">
+    Standalone SVGs — <code>loader.svg</code>, <code>loader-tile.svg</code>, <code>loader-oneshot.svg</code> — animate on their own (SMIL) when opened in any modern browser.
+    The one-shot loops here only when you press Replay; in production it plays once and freezes on the check.
+  </p>
+
+</div>
+
+<script>
+  // Replay the one-shot by re-fetching the SVG (SMIL restarts on reload).
+  document.getElementById('replayBtn').addEventListener('click', function(){
+    document.querySelectorAll('img.os').forEach(function(img){
+      var base = img.getAttribute('src').split('?')[0];
+      img.setAttribute('src', base + '?t=' + Date.now());
+    });
+  });
+</script>
+</body>
+</html>

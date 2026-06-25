@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><defs>
+<linearGradient id="indigoG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+<linearGradient id="greenG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34D399"/><stop offset="1" stop-color="#10B981"/></linearGradient>
+<linearGradient id="darkG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#131A33"/><stop offset="1" stop-color="#0B1020"/></linearGradient>
+
+  <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6"><stop offset="0" stop-color="#1B2550"/><stop offset="1" stop-color="#0B1020"/></radialGradient></defs>
+  <rect width="1080" height="1920" fill="url(#glow)"/>
+  <g opacity="0.1"><circle cx="540" cy="960" r="460" fill="none" stroke="#818CF8" stroke-width="1.5"/><circle cx="540" cy="960" r="380" fill="none" stroke="#818CF8" stroke-width="1.5"/><circle cx="540" cy="960" r="300" fill="none" stroke="#818CF8" stroke-width="1.5"/><circle cx="540" cy="960" r="220" fill="none" stroke="#818CF8" stroke-width="1.5"/></g>
+  <g opacity="0.95"><circle cx="540" cy="960" r="140" fill="none" stroke="#34D399" stroke-width="16"/><circle cx="540" cy="960" r="54.6" fill="url(#greenG)"/></g>
+  <g opacity="0.2"><circle cx="540" cy="960" r="540" fill="none" stroke="#34D399" stroke-width="1"/></g>
+  <!-- top logo -->
+  <g transform="translate(470,300) scale(1.1666666666666667) translate(0,0)"><defs><linearGradient id="mt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient></defs><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34D399"/><stop offset="1" stop-color="#10B981"/></linearGradient></defs><rect width="120" height="120" rx="30" fill="url(#mt)"/><circle cx="60" cy="60" r="33" fill="none" stroke="#fff" stroke-width="9"/><circle cx="60" cy="60" r="13" fill="url(#mg)"/></g>
+  <g transform="translate(260,470) scale(1.28) translate(1.6,-37.9)"><defs><linearGradient id="wgetresolved-wordmark-inverse.svga" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34D399"/><stop offset="1" stop-color="#10B981"/></linearGradient></defs><text x="10" y="96" font-family="Manrope" font-size="60" letter-spacing="-1.2"><tspan font-weight="600" fill="#E2E8F0">get</tspan><tspan font-weight="800" fill="#818CF8">res</tspan><tspan font-weight="800" fill="transparent">o</tspan><tspan font-weight="800" fill="#818CF8">lved</tspan></text><circle cx="212.65" cy="79.8" r="13.41" fill="none" stroke="url(#wgetresolved-wordmark-inverse.svga)" stroke-width="6"/><circle cx="212.65" cy="79.8" r="4.79" fill="url(#wgetresolved-wordmark-inverse.svga)"/><circle cx="359.08" cy="90" r="5" fill="url(#wgetresolved-wordmark-inverse.svga)"/><text x="372.08" y="96" font-family="Manrope" font-size="60" font-weight="800" letter-spacing="-1.2" fill="url(#wgetresolved-wordmark-inverse.svga)">id</text></g>
+  <!-- mid eyebrow above bullseye -->
+  <text x="540" y="700" text-anchor="middle" font-family="Manrope" font-size="30" font-weight="700" letter-spacing="6" fill="#34D399">RESOLVE POINT</text>
+  <!-- bottom block -->
+  <text x="540" y="1340" text-anchor="middle" font-family="Manrope" font-size="64" font-weight="800" letter-spacing="-1" fill="#FFFFFF">Setiap permintaan,</text>
+  <text x="540" y="1416" text-anchor="middle" font-family="Manrope" font-size="64" font-weight="800" letter-spacing="-1" fill="#FFFFFF">dituntaskan.</text>
+  <text x="540" y="1492" text-anchor="middle" font-family="Manrope" font-size="32" font-weight="500" fill="#AEB4E6">Hardware &#183; Software Development</text>
+  <!-- CTA pill -->
+  <rect x="370" y="1560" width="340" height="92" rx="46" fill="url(#greenG)"/>
+  <text x="540" y="1620" text-anchor="middle" font-family="Manrope" font-size="34" font-weight="700" letter-spacing="0.5" fill="#06301F">getresolved.id</text>
+  <!-- footer tagline -->
+  <text x="540" y="1760" text-anchor="middle" font-family="Manrope" font-size="26" font-weight="600" letter-spacing="3" fill="#818CF8">GET IT RESOLVED</text>
+  </svg>

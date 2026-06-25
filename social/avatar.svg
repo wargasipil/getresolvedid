@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><defs>
+<linearGradient id="indigoG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+<linearGradient id="greenG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34D399"/><stop offset="1" stop-color="#10B981"/></linearGradient>
+<linearGradient id="darkG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#131A33"/><stop offset="1" stop-color="#0B1020"/></linearGradient>
+</defs>
+  <rect width="1024" height="1024" fill="url(#indigoG)"/>
+  <g opacity="0.07"><circle cx="512" cy="512" r="470" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="512" cy="512" r="395" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="512" cy="512" r="320" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g transform="translate(256,256) scale(4.266666666666667) translate(0,0)"><circle cx="60" cy="60" r="33" fill="none" stroke="#fff" stroke-width="9"/><circle cx="60" cy="60" r="13" fill="url(#greenG)"/></g>
+  </svg>

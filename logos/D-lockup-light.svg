@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.6 37.9 434.7 87.4" width="434.7" height="87.4"><defs>
+    <linearGradient id="Dl-ind" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="Dl-grn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs><text x="10" y="96" font-family="Manrope" font-size="60" letter-spacing="-1.5"><tspan font-weight="500" fill="#0F172A">get</tspan><tspan font-weight="800" fill="#4F46E5">resolved</tspan></text><circle cx="355.5799617767334" cy="90" r="8" fill="none" stroke="#10B981" stroke-width="3"/><circle cx="355.5799617767334" cy="90" r="3.2" fill="#10B981"/><text x="369.5799617767334" y="96" font-family="Manrope" font-size="60" font-weight="800" letter-spacing="-1.5" fill="#10B981">id</text></svg>
